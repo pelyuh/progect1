@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>First project</title>
@@ -12,11 +12,11 @@
         <h2>Блочні елементи</h2>
         <ul>
             <li>&lt;h1&gt;...&lt;/h6&gt;</li>
-            <blockquote>
-                &lt;h1&gt; - лише один на сторінці.
-                &lt;h2&gt; - від 2 до 4 на сторінці.
-                &lt;h3&gt; - від 4 дод 8 на сторінці.
-            </blockquote>
+            <ul>
+                <li>&lt;h1&gt; - лише один на сторінці.</li>
+                <li>&lt;h2&gt; - від 2 до 4 на сторінці.</li>
+                <li>&lt;h3&gt; - від 4 дод 8 на сторінці.</li>
+            </ul>
             <li>&lt;div&gt;...&lt;/div&gt;</li>
             <li>&lt;p&gt;...&lt;/p&gt;</li>
             <li>&lt;pre&gt;...&lt;/pre&gt;</li>
@@ -58,7 +58,63 @@
             <li>&lt;q&gt;...&lt;/q&gt;</li>
             <li>&lt;samp&gt;...&lt;/samp&gt;</li>
             <li>&lt;var&gt;...&lt;/var&gt;</li>
+            <li>&lt;img src="URL" alt="альтернативный текст"&gt;</li>
         </ul>
+        <img src="img/pexels-photo-248797.jpeg" alt="photo">
+
+        <h3>Таблиці</h3>
+        <table width="800" height="200" border="1">
+            <caption>Таблиця з даними</caption>
+            <thead>
+                <tr>
+                    <th>Шапка 1</th>
+                    <th>Шапка 2</th>
+                    <th>Шапка 3</th>
+                    <th>Шапка 4</th>
+                    <th>Шапка 5</th>
+                    <th>Шапка 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
     </main>
     <footer>
