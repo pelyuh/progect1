@@ -1,14 +1,55 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Inline стили</title>
+    <meta charset="utf-8"/>
+    <title>CSS</title>
+
+    <!-- Глобальные стили
+    Тег style обязательно дожен быть помещен внутрь тега head.
+    -->
+    <style>
+        /* Комментарий */
+        .global {
+            color: red;
+        }
+
+        .global-span {
+            font-size: 30px;
+        }
+    </style>
+
+    <!-- Внешние сили
+    В атрибуте href тега link указывается путь к css файлам, в атрибуте rel указывается как подключаемый файл относится к документу.
+    До введения стандарта HTML5, требовалось указывать атрибут type.
+  -->
+    <link href="style.css" rel="stylesheet" />
+
 </head>
 <body>
-<!-- Свойство color позволяет задать цвет текста внутри элемента. -->
 
+<h2>Inline стили</h2>
+<!--
+Свойство color позволяет задать цвет текста внутри элемента.
+-->
 <p style="color: red;">
-    Tincidunt integer eu augue augue nunc elit dolor, <span style="color: green;">luctus placerat scelerisque euismod</span>, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+    Tincidunt integer eu augue augue nunc elit dolor, <span
+        style="color: green;">luctus placerat scelerisque euismod</span>, iaculis eu lacus nunc mi elit, vehicula ut
+    laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+</p>
+
+
+<h2>Глобальные стили</h2>
+<!-- Тег style обязательно дожен быть помещен внутрь тега head.  -->
+<p class="global">
+    <span class="global-span">T</span>incidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque
+    euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+</p>
+
+<h2>Внешние сили</h2>
+
+<p class="link">
+    Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi
+    elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
 </p>
 </body>
 </html>
